@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StockInUpdate">
+
+    <include
+        android:id="@+id/stockintoolbar"
+        layout="@layout/activity_toolbar_stock_in"/>
+
+
+    <TextView
+        android:id="@+id/TVitemlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="@color/black"
+        android:text="Item"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/ETItemList"
+        app:layout_constraintTop_toTopOf="@+id/ETItemList" />
+
+    <EditText
+        android:id="@+id/ETItemList"
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Select item you want to update"
+        android:textSize="14sp"
+        android:fontFamily="@font/inter_medium"
+        android:textColorHint="#ced4da"
+        android:drawableEnd="@drawable/ic_cheveron_right"
+        android:drawablePadding="10dp"
+        android:textAlignment="textEnd"
+        android:paddingStart="8dp"
+        android:background="@drawable/form_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stockintoolbar"
+        />
+
+
+    <Button
+        android:id="@+id/saveaaddeditem"
+        android:layout_width="354dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:fontFamily="@font/inter_medium"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_primary"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

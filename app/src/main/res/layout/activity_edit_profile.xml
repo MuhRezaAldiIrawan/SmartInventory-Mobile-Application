@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp"
+    android:background="@color/white"
+    tools:context=".edit_profile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingBottom="80dp"
+        android:background="@color/white"
+        >
+
+        <!--        <TextView-->
+<!--            android:id="@+id/profilename"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/profilepic"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:text="Rayyan Anugerah"-->
+<!--            android:fontFamily="@font/inter_semibold"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            />-->
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_cheveron_left"
+            app:layout_constraintBottom_toTopOf="@+id/profilepic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.333" />
+
+        <TextView
+            android:id="@+id/personalinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Personal Info"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/backbutton"
+            app:layout_constraintBottom_toBottomOf="@+id/backbutton"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilepic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/profilepic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/personalinfo" />
+
+
+        <Button
+            android:id="@+id/changephoto"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="104dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter_semibold"
+            android:paddingHorizontal="0dp"
+            android:paddingVertical="0dp"
+            android:text="Change photo"
+            android:textAllCaps="false"
+            android:textColor="@color/primary"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profilepic" />
+
+
+        <TextView
+            android:id="@+id/textviewemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/changephoto"
+            app:layout_constraintStart_toStartOf="@id/useremail"
+            app:layout_constraintBottom_toTopOf="@id/useremail"
+            android:layout_marginTop="32dp"
+            android:text="Email"
+            android:textSize="14sp"
+            android:textColor="@color/primarydark"
+            android:fontFamily="@font/inter_regular"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/useremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="4dp"
+            android:hint="@string/email"
+            app:boxBackgroundColor="@color/softblue"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintTextColor="@color/primary"
+            android:textColorHint="@color/primarydar2"
+            app:layout_constraintTop_toBottomOf="@id/textviewemail"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textviewphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/userphone"
+            app:layout_constraintStart_toStartOf="@id/useremail"
+            app:layout_constraintBottom_toBottomOf="@id/useremail"
+            android:layout_marginTop="16dp"
+            android:text="Phone Number"
+            android:textSize="14sp"
+            android:textColor="@color/primarydark"
+            android:fontFamily="@font/inter_regular"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="4dp"
+            android:hint="0819445690"
+            app:boxBackgroundColor="@color/softblue"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintTextColor="@color/primary"
+            android:textColorHint="@color/primarydar2"
+            app:layout_constraintTop_toBottomOf="@id/textviewphone"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textviewpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/userpassword"
+            app:layout_constraintStart_toStartOf="@id/useremail"
+            app:layout_constraintBottom_toBottomOf="@id/userphone"
+            android:layout_marginTop="16dp"
+            android:text="Password"
+            android:textSize="14sp"
+            android:textColor="@color/primarydark"
+            android:fontFamily="@font/inter_regular"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="4dp"
+            android:hint="********"
+            app:boxBackgroundColor="@color/softblue"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintTextColor="@color/primary"
+            android:textColorHint="@color/primarydar2"
+            app:layout_constraintTop_toBottomOf="@id/textviewpassword"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/changepassword"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textSize="14sp"
+            android:text="Change password"
+            android:textAllCaps="false"
+            android:textColor="@color/primary"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            app:layout_constraintTop_toBottomOf="@id/userpassword"
+            app:layout_constraintStart_toStartOf="@id/userpassword"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

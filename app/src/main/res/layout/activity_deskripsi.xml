@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onboarding_background"
+    tools:context=".deskripsi">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Deskripsi Aplikasi"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Banyaknya Jumlah data barang  yang masuk dan keluar didalam sebuah perusahaan dapat membebani kinerja dari admistrasi data pada sebuah perusahaan sehingga dibuthkan sebuah aplikasi atau alat pembantu untuk meringankan pekerjaan yang akan dilakukan. Salah satu contohnya adalah perusahaan atau toko yang masih berbasis pencatatan manual sangat membutuhkan alat pembantu untuk meringankan pencatatan atau pekerjaan dari toko tersebut.
+" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="8dp"
+        android:text="Tujuan Aplikasi : "
+        />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="225dp"
+    android:layout_marginLeft="8dp"
+    android:text="untuk dapat membantu manajemen dari sebuah toko, baik itu dalam hal administrasi ataupun barang-barang yang ada didalam toko tersebut.
+    " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Manfaat Aplikasi : "
+        android:layout_marginTop="290dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="315dp"
+        android:text="Dapat mempermudah pemilik toko atau user dalam hal pengelolaan barang dan administrasi dari toko, Dapat menghubungi mitra dagang atau produsen barang secara langsung tanpa perlu menunggu kedatangan dari produsen barang
+, Dapat mengatur laju keluar dan masuk dari barang sehingga barang tidak tertumpuk
+.
+" />
+
+
+
+
+</RelativeLayout>

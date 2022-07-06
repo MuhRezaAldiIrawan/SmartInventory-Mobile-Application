@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable-v24/btn_cust_circle.xml" value="0.24342105263157895" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable-v24/btn_cust_corner_radius.xml" value="0.24104234527687296" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable-v24/top_button_background.xml" value="0.1868421052631579" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable-v24/white_background.xml" value="0.1868421052631579" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/background_blue.xml" value="0.24342105263157895" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/background_btn.xml" value="0.18782894736842104" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/btn_primary.xml" value="0.2546052631578947" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/button_background.xml" value="0.18782894736842104" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/card_custom.xml" value="0.2243421052631579" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/cardview_stock_info.xml" value="0.225" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/form.xml" value="0.20164473684210527" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/form_white.xml" value="0.24342105263157895" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/grayshape.xml" value="0.24342105263157895" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.2243421052631579" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/ic_baseline_chevron_left_24.xml" value="0.20526315789473684" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/ic_cheveron_left.xml" value="0.20526315789473684" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/ic_cheveron_left_black.xml" value="0.24342105263157895" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/ic_cheveron_right.xml" value="0.2546052631578947" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/ic_cheveron_right_blue.xml" value="0.2546052631578947" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/ic_cog.xml" value="0.19736842105263158" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/ic_download.xml" value="0.19736842105263158" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/ic_fluent_scan_dash_24_regular.xml" value="0.20559210526315788" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2546052631578947" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/ic_notif.xml" value="0.1394736842105263" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/ic_notif_on.xml" value="0.1394736842105263" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/ic_plus.xml" value="0.24342105263157895" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/ic_search.xml" value="0.2243421052631579" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/ic_upload.xml" value="0.2546052631578947" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/outline_button.xml" value="0.20526315789473684" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/search_field_custom.xml" value="0.2243421052631579" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/softblue_background.xml" value="0.2243421052631579" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/thumb.xml" value="0.24342105263157895" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/drawable/thumbcust.xml" value="0.24342105263157895" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/font/font.xml" value="0.4171875" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.24866131191432397" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout-w936dp/activity_login.xml" value="0.290234375" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_add_items.xml" value="0.25" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_add_items_toolbar.xml" value="0.17349726775956284" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_deskripsi.xml" value="0.11457659987071751" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_edit_profile.xml" value="0.25" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_info.xml" value="0.11457659987071751" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_on_boarding.xml" value="0.2" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_pencipta.xml" value="0.11407103825136612" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_registerr.xml" value="0.33" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.19605263157894737" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_stock_in_update.xml" value="0.2332236842105263" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_toolbar.xml" value="0.2332236842105263" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_toolbar_stockIn.xml" value="0.2332236842105263" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/activity_toolbar_stock_in.xml" value="0.2332236842105263" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/fragment_in_out.xml" value="0.2444078947368421" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/fragment_items.xml" value="0.1957894736842105" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/fragment_settings.xml" value="0.22" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/onboarding_layout.xml" value="0.2444078947368421" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/recycle_item_inout.xml" value="0.25" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/recycle_view_items.xml" value="0.25" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/sd.xml" value="0.1" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/layout/test.xml" value="0.1" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/menu/menu_botnav.xml" value="0.2026315789473684" />
+        <entry key="..\:/Materi Kuliah/Semester 5/Mobile/InventoryApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19736842105263158" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

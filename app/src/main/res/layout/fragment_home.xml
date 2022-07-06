@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="80dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Infocard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="01dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="348dp"
+                android:background="@color/primary"
+                >
+
+                <ImageView
+                    android:id="@+id/goodmorningemote"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/TVday"
+                    app:layout_constraintBottom_toBottomOf="@id/TVday"
+                    android:src="@drawable/goodmorningemote"
+                    />
+                <TextView
+                    android:id="@+id/TVday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Good Morning,"
+                    android:textColor="@color/softblue"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@id/goodmorningemote"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TVName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="@string/name"
+                    android:textColor="@color/softblue"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toTopOf="@id/TVday"
+                    app:layout_constraintStart_toEndOf="@id/TVday" />
+
+                <ImageButton
+                    android:id="@+id/opencam"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:elevation="01dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/ic_barcode_scanner"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/TVToday_InfoStock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Today,"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/TVday" />
+
+                <TextView
+                    android:id="@+id/Date_Infostock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Nov 8"
+                    android:textColor="#E0E0E0"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/TVToday_InfoStock"
+                    app:layout_constraintStart_toEndOf="@id/TVToday_InfoStock"
+                    app:layout_constraintTop_toTopOf="@id/TVToday_InfoStock"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/TVTotalStock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Total"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@id/TVStockNum"
+                    app:layout_constraintTop_toBottomOf="@id/TVStockNum" />
+
+                <TextView
+                    android:id="@+id/TVStockIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Stock In"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/TVStockInNum"
+                    app:layout_constraintTop_toBottomOf="@id/TVStockInNum" />
+
+                <TextView
+                    android:id="@+id/TVStockInNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="0"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@id/TVStockIn"
+                    app:layout_constraintTop_toBottomOf="@+id/TVToday_InfoStock" />
+
+                <TextView
+                    android:id="@+id/TVStockOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="91dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Stock Out"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/TVStockIn"
+                    app:layout_constraintTop_toBottomOf="@id/TVStockOutNum" />
+
+                <TextView
+                    android:id="@+id/TVStockOutNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="48dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="0"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/TVStockOut"
+                    app:layout_constraintTop_toBottomOf="@+id/TVToday_InfoStock" />
+
+                <TextView
+                    android:id="@+id/TVStockNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="48dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="0"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TVToday_InfoStock" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <EditText
+            android:id="@+id/ETSearchField"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="-116dp"
+            android:autofillHints="Search"
+            android:background="@drawable/search_field_custom"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="16dp"
+            android:elevation="01dp"
+            android:fontFamily="@font/inter_regular"
+            android:hint="Search here..."
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#000"
+            android:textColorHint="#BDBDBD"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/Infocard" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/TVAddcard"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="24dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintTop_toBottomOf="@id/ETSearchField">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:paddingHorizontal="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/TVAddItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Add Items"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/softblue_background"
+                    android:drawableStart="@drawable/ic_add"
+                    android:drawableEnd="@drawable/ic_cheveron_right"
+                    android:drawablePadding="12dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:padding="8dp"
+                    android:text="Register New Items"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/TVAddItems" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/InOut"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="24dp"
+            android:orientation="horizontal"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintTop_toBottomOf="@id/TVAddcard">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="183dp"
+                android:paddingHorizontal="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/TVInout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Stock In/Out"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardStockin"
+                    android:layout_width="101dp"
+                    android:layout_height="112dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="@color/softblue"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="00dp"
+                    app:layout_constraintStart_toStartOf="@id/TVInout"
+                    app:layout_constraintTop_toBottomOf="@id/TVInout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/IVStockIn"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginHorizontal="33dp"
+                            android:layout_marginTop="24dp"
+                            android:src="@drawable/ic_download" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/IVStockIn"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/inter_medium"
+                            android:text="Stock in"
+                            android:textAlignment="center"
+                            android:textColor="#000" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardStockOut"
+                    android:layout_width="101dp"
+                    android:layout_height="112dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="@color/softblue"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="00dp"
+                    app:layout_constraintStart_toEndOf="@id/cardStockin"
+                    app:layout_constraintTop_toBottomOf="@id/TVInout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/IVStockOut"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginHorizontal="33dp"
+                            android:layout_marginTop="24dp"
+                            android:src="@drawable/ic_upload" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/IVStockOut"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/inter_medium"
+                            android:text="Stock Out"
+                            android:textAlignment="center"
+                            android:textColor="#000" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardAudit"
+                    android:layout_width="101dp"
+                    android:layout_height="112dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="@color/softblue"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="00dp"
+                    app:layout_constraintStart_toEndOf="@id/cardStockOut"
+                    app:layout_constraintTop_toBottomOf="@id/TVInout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|center_horizontal">
+
+                        <ImageView
+                            android:id="@+id/IVAudit"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginHorizontal="33dp"
+                            android:layout_marginTop="24dp"
+                            android:src="@drawable/ic_switch_vertical" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/IVAudit"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/inter_medium"
+                            android:text="Audit"
+                            android:textAlignment="center"
+                            android:textColor="#000" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/supplierlist"
+            android:layout_width="363dp"
+            android:layout_height="232dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/softyellow"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InOut">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="16dp">
+
+                <TextView
+                    android:id="@+id/TVSupplier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Supplier"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="center"
+                    android:paddingStart="32dp"
+                    android:text="See all"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/TVSupplier"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/TVSupplier" />
+
+                <Button
+                    android:id="@+id/supplier1"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="32dp"
+                    android:background="#00000000"
+                    android:drawableStart="@drawable/ic_account_circle"
+                    android:drawableEnd="@drawable/ic_cheveron_right"
+                    android:drawablePadding="12dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:padding="8dp"
+                    android:text="@string/supplier_name"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/TVSupplier" />
+
+                <Button
+                    android:id="@+id/supplier2"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#00000000"
+                    android:drawableStart="@drawable/ic_account_circle"
+                    android:drawableEnd="@drawable/ic_cheveron_right"
+                    android:drawablePadding="12dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:padding="8dp"
+                    android:text="@string/supplier_name"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/supplier1" />
+
+                <Button
+                    android:id="@+id/supplier3"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#00000000"
+                    android:drawableStart="@drawable/ic_account_circle"
+                    android:drawableEnd="@drawable/ic_cheveron_right"
+                    android:drawablePadding="12dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:padding="8dp"
+                    android:text="@string/supplier_name"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/supplier2" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

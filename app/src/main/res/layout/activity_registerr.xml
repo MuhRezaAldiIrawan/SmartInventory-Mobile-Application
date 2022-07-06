@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="40dp"
+    tools:context=".Registerr">
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signuptext"
+        android:textSize="36sp"
+        android:fontFamily="@font/inter_medium"
+        android:textColor="@color/primary"
+        android:layout_marginStart="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:src="@drawable/smiling_face_glasses"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/signup"
+        app:layout_constraintBottom_toBottomOf="@id/signup"
+        />
+
+    <TextView
+        android:id="@+id/captionsignup"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
+        android:text="@string/caption_signup"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_medium"
+        android:textColor="@color/graybd"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ETSUForm1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"
+        android:hint="@string/username"
+        app:boxBackgroundColor="@color/softblue"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:hintTextColor="@color/primary"
+        android:textColorHint="@color/graybd"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/primary"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/primary"
+        app:counterMaxLength="10"
+        app:layout_constraintTop_toBottomOf="@id/captionsignup"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernameregis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ETSUForm2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:hint="@string/email"
+        app:boxBackgroundColor="@color/softblue"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:hintTextColor="@color/primary"
+        android:textColorHint="@color/graybd"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/primary"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/primary"
+        app:layout_constraintTop_toBottomOf="@id/ETSUForm1"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailregis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ETSUForm3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:hint="@string/password"
+        app:boxBackgroundColor="@color/softblue"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:hintTextColor="@color/primary"
+        android:textColorHint="@color/graybd"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/primary"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/primary"
+        app:layout_constraintTop_toBottomOf="@id/ETSUForm2"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordregis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ETSUForm4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:hint="@string/re_type_password"
+        app:boxBackgroundColor="@color/softblue"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:hintTextColor="@color/primary"
+        android:textColorHint="@color/graybd"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/primary"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/primary"
+        app:layout_constraintTop_toBottomOf="@id/ETSUForm3"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/retypepassregis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/create_btn"
+        android:layout_width="336dp"
+        android:layout_height="62dp"
+        android:text="Create Account"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_regular"
+        android:background="@drawable/btn_primary"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/ETSUForm4"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/create_btn"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/TVAlready"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:text="Already have an account?"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_clickhere"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:background="#00000000"
+        android:text="Click Here"
+        android:textAllCaps="false"
+        android:textColor="@color/primary"
+        android:layout_marginTop="16dp"
+        android:paddingStart="8dp"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/TVAlready"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

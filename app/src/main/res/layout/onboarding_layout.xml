@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/sliderimage"
+        android:layout_width="316dp"
+        android:layout_height="316dp"
+        android:layout_marginTop="94dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/onboarding_icon" />
+
+    <TextView
+        android:id="@+id/tvonboarding1"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:text="Manage inventory never been so easy"
+        android:textColor="@color/primary"
+        android:textSize="28sp"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/inter_bold"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderimage" />
+
+
+    <TextView
+        android:id="@+id/tvonboarding2"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:text="Manage your inventory easily through your phone!"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvonboarding1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

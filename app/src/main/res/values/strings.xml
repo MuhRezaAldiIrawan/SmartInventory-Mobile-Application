@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Smart Inventory</string>
+    <string name="name">Rayyan</string>
+    <string name="onboardingtext1">Let\'s Get Started</string>
+    <string name="onboardingtext2">Manage and maintenance with your fingertips</string>
+    <string name="onboardingtext3">Easily track your items from your screen!</string>
+    <string name="onboardingtext4">Have the envinronment under control</string>
+    <string name="onboardingcaption1">Manage your inventory easily through your phone!</string>
+    <string name="onboardingcaption2">Track your items? We’ve made it easy for you!</string>
+    <string name="onboardingcaption3">What are you waiting for? Simply, just press the button below!</string>
+    <string name="skip">Skip</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="signuptext">Let\'s sign you up!</string>
+    <string name="caption_signup">Create an account so you can manage your inventory!</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="caption_signin">We are so happy to see you, again! You’ve been missed!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="supplier_name">Supplier Name</string>
+    <string name="settings">Settings</string>
+    <string name="account">Account</string>
+    <string name="about_app">About App</string>
+    <string name="privacyandpolicy">Privacy Policy</string>
+    <string name="terms">Terms and Conditions</string>
+    <string name="about">About</string>
+    <string name="notification">Notification</string>
+    <string name="other">Other</string>
+    <string name="log_out">Log out</string>
+    <string name="items">Items</string>
+
+    <string-array name="infostock">
+        <item>Stock In</item>
+        <item>Stock Out</item>
+        <item>Audit</item>
+        <item>Stock In</item>
+        <item>Stock Out</item>
+        <item>Stock Out</item>
+    </string-array>
+
+    <string-array name="jmlitem">
+        <item>10</item>
+        <item>2</item>
+        <item>100</item>
+        <item>34</item>
+        <item>48</item>
+        <item>48</item>
+    </string-array>
+
+    <string-array name="itemname">
+        <item>Kahf Parfume</item>
+        <item>Olive Parfume</item>
+        <item>Blue Pillow</item>
+        <item>Choki-Choki</item>
+        <item>Choki-Choki Coklat</item>
+        <item>Choki-Choki Coklat</item>
+    </string-array>
+
+
+    <string-array name="stockname">
+        <item>Kahf Parfume - Eua de Toilette</item>
+        <item>Olive Parfume</item>
+        <item>Blue Pillow</item>
+        <item>Kahf - Energizing Body Wash</item>
+        <item>Kahf - Energizing Body Wash</item>
+        <item>Kahf - Energizing Body Wash</item>
+        <item>Kahf - Energizing Body Wash</item>
+        <item>Kahf - Energizing Body Wash</item>
+    </string-array>
+
+    <string-array name="jmlstock">
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+    </string-array>
+
+</resources>
